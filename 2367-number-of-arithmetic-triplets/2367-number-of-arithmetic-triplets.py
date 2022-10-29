@@ -6,6 +6,6 @@ class Solution:
         for i in range(len_nums):
             for j in range(i, len_nums):
                 for k in range(j, len_nums):
-                    if nums[j] - nums[i] == diff and nums[k] - nums[j] == diff and i < j < k:
+                    if nums[j] - nums[i] == diff and nums[k] - nums[j] == diff:
                         counts += 1
         return counts
