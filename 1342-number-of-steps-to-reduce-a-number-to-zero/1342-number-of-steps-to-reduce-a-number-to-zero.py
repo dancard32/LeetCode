@@ -3,8 +3,11 @@ class Solution:
         
         counts = 0
         while num > 0:
-            if num%2 == 1: num -= 1    
-            else: num /= 2
-            counts +=1
+            if num%2 == 1:
+                num -= 1
+                counts += 1
+            else:
+                num /= 2
+                counts +=1
                 
         return counts
